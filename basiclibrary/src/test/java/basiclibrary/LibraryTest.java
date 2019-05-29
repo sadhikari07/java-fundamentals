@@ -102,7 +102,6 @@ Feature 1:
 
 Feature 2:
 1. Test for array with same item listed three times
-2. Test for empty array
 3. Test with negative integers in the array
 
 Feature 3:
