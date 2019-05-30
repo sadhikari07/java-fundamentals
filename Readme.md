@@ -2,5 +2,5 @@
 
 [Link to Readme for Lab 03: maps](https://github.com/sadhikari07/java-fundamentals/blob/master/basiclibrary/maps.md)
 
-[Link to Readme for Lab 03: lintr error](https://github.com/sadhikari07/java-fundamentals/blob/master/basiclibrary/basicLibrary.md)
+[Link to Readme for Lab 03: lintr error](https://github.com/sadhikari07/java-fundamentals/blob/master/lintr/liner.md)
 
