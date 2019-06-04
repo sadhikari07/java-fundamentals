@@ -21,6 +21,17 @@ Add an instance method addReview to your Restaurant class. This method should ta
 Add tests to ensure that when you call addReview, the association is created between the Restaurant and the Review.
 When you associate a review with a restaurant, that restaurant’s star rating should change. Ensure that your addReview method updates the Restaurant star rating appropriately, and add tests. (In particular, ensure that if you’re trying to call addReview when the restaurant and the review are already associated, the star rating of the restaurant does not update.)
 
+## Directions for testing:
+The following tests were created for testing the functionality of restaurant.java:
+  testConstructor: tests if restaurant constructor is created properly and .tostring method is functional.
+  testUpdatedRating: tests if .tostring is outputting updated review that's assosiated with the customer specified.
+  testIfMultipleReviewsAdded: tests if mutiple reviews are being stored
+  
+  The following tests were created for testing the functionality of restaurant.java:
+    testConstructor: tests if review constructor is created properly and .tostring method is functional.
+    estIfGettingRestaurant: tests if name of restaurant is being updated from the information passed from restaurant      constructor.
+  
+  
 
 [Link to Restaurant.java](https://github.com/sadhikari07/java-fundamentals/blob/master/inheritance/src/main/java/inheritance/Restaurant.java)
 
