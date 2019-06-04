@@ -9,8 +9,47 @@ import static org.junit.Assert.*;
 public class RestaurantTest {
     @Test
     public void testConstructor() {
-        Restaurant classUnderTest = new Restaurant();
-        Restaurant subway = new Restaurant("Subway", 3, "$$");
-        assertEquals("Subway has a rating of 3 and is priced at $$", subway.toString());
+        // Restaurant to test
+        Restaurant subway = new Restaurant("Subway", 3, "$");
+
+        // Review to test (review is given a restaurant)
+        Review michael = new Review("Michael Scott", "Really crappy restaurant", 1, subway);
+
+        // Review to test (review is given a restaurant)
+        Review dwight = new Review("Dwight Schrute", "Beets beats battle star gallectica", 10, subway);
+
+        // Add the review to the restaurant
+
+        subway.addReview(michael);
+        subway.addReview(dwight);
+
+        // Actual test
+        assertEquals("Subway has a rating of 10 and is priced at $. The following are the review from ont of our customers Dwight Schrute: Beets beats battle star gallectica", subway.toString());
     }
+
+    @Test
+    public void testUpdatedRating() {
+
+        Restaurant subway = new Restaurant("Subway", 3, "$");
+        Review michael = new Review("Michael Scott", "Really crappy restaurant", 1, subway);
+        Review dwight = new Review("Dwight Schrute", "Beets beats battle star gallectica", 10, subway);
+        subway.addReview(michael);
+        subway.addReview(dwight);
+        assertNotEquals("Subway has a rating of 1 and is priced at $. The following are the review from ont of our customers Dwight Schrute: Beets beats battle star gallectica", subway.toString());
+    }
+
+    @Test
+    public void testIfMultipleReviewsAdded() {
+        Restaurant subway = new Restaurant("New subway", 3, "$");
+        Review michael = new Review("Michael Scott", "Really crappy restaurant", 1, subway);
+        Review kevin = new Review("Kevin Malone", "Nom nom nom", 5, subway);
+        Review dwight = new Review("Dwight Schrute", "Beets beats battle star gallectica", 10, subway);
+        subway.addReview(michael);
+        subway.addReview(dwight);
+        subway.addReview(kevin);
+        assertEquals("There should be three reviews in storage", 3, subway.reviewsFromCustomers.size());
+    }
+
+
+
 }
