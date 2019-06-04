@@ -3,29 +3,43 @@
  */
 package inheritance;
 
+import java.util.ArrayList;
+
 public class Restaurant {
 
     private String name;
     private int rating;
     private String price;
+    ArrayList<Review> reviewsFromCustomers = new ArrayList<Review>();
 
-    public Restaurant() {};
     public Restaurant(String name, int rating, String price) {
         this.name = name;
         this.rating = rating;
         this.price = price;
     }
 
-    public String toString(){
-        return String.format("%s has a rating of %d and is priced at %s", this.name, this.rating, this.price);
+    public String getName() {
+        return name;
     }
 
-    public void addReview(){
-        
+    public int getRating() {
+        return rating;
+    }
 
+    public String getPrice() {
+        return price;
+    }
+
+
+    public void addReview(Review review){
+      reviewsFromCustomers.add(review);
+      this.rating = review.getStars();
+    }
+
+
+    public String toString(){
+        return String.format("%s has a rating of %d and is priced at %s. The following are the review from ont of our customers %s: %s", this.name, this.rating, this.price, reviewsFromCustomers.get(1).getAuthor(), reviewsFromCustomers.get(1).getBody());
     }
 
 }
-
-
 
