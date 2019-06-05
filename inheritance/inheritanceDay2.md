@@ -1,6 +1,6 @@
 Problem summary:
 
-## Lab 06: Inheritance and Interfaces
+## Lab 7: Composition and Inheritance, Part 2
 
 1. The users want shops! Create a Shop class; a Shop should have a name, description, and number of dollar signs.
 Implement a constructor for a Shop.
