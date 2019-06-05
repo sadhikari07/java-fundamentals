@@ -1,40 +1,39 @@
 package inheritance;
 
-public class Review {
+public class Review extends ReviewAll {
 
-
-    private String author;
-    private String body;
-    private int stars;
     private Restaurant restaurant;
+    private Shop shop;
+    private Theater theater;
+    private String movieWatched;
 
-    public Review(){};
-
+//Following is review constructor for restaurant
     public Review(String author, String body, int stars, Restaurant restaurant){
-        this.author = author;
-        this.body = body;
-        this.stars = stars;
+        super(author, body, stars);
         this.restaurant = restaurant;
     }
 
-    public String getAuthor() {
-        return author;
+    //Following is review constructor for Shop
+    public Review(String author, String body, int stars, Shop shop){
+        super(author, body, stars);
+        this.shop = shop;
     }
 
-    public String getBody() {
-        return body;
+    //Following is review constructor for theater with name of movie
+    public Review(String author, String body, int stars, Theater theater, String movieWatched){
+        super(author, body, stars);
+        this.theater = theater;
+        this.movieWatched = movieWatched;
     }
 
-    public int getStars() {
-        return stars;
-    }
-
-    public Restaurant getRestaurant() {
-        return restaurant;
+    //Following is review constructor for theater without the name of the movie
+    public Review(String author, String body, int stars, Theater theater){
+        super(author, body, stars);
+        this.theater = theater;
     }
 
     public String toString(){
-        return String.format("%s has rated %s: %d. Following is his review: %s", this.author, this.restaurant.getName(), this.stars, this.body);
+        return String.format("%s has posted following review: %s, and has given %d rating", this.getAuthor(), this.getBody(), this.getStars());
     }
 
 }
