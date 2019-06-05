@@ -50,6 +50,10 @@ The following tests were created for testing the functionality of shop.java:
   testConstructorTheaterReviewWithoutMovie: tests if theater reviews are being created without movies
   testConstructorTheaterReviewWithMovie: tests if theater reviews are being created with movies 
   
+  
+ [Link to superclass Business.java](https://github.com/sadhikari07/java-fundamentals/blob/master/inheritance/src/main/java/inheritance/Business.java)
+ 
+ [Link to superclass ReviewAll.java](https://github.com/sadhikari07/java-fundamentals/blob/master/inheritance/src/main/java/inheritance/ReviewAll.java)
 
 [Link to Restaurant.java](https://github.com/sadhikari07/java-fundamentals/blob/master/inheritance/src/main/java/inheritance/Restaurant.java)
 
