@@ -3,17 +3,22 @@
  */
 package inheritance;
 
+import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class RestaurantTest {
+
     @Test
     public void testConstructor() {
         // Restaurant to test
-        Restaurant subway = new Restaurant("Subway", 3, "$");
+        Restaurant subway = new Restaurant("Subway", 2, "$");
 
         // Review to test (review is given a restaurant)
-        Review michael = new Review("Michael Scott", "Really crappy restaurant", 1, subway);
+        Review michael = new Review("Michael Scott", "Really crappy restaurant", 2, subway);
+
+        // Review to test (review is given a restaurant)
+        Review kevin = new Review("Kevin Malone", "Nom nom nom", 18, subway);
 
         // Review to test (review is given a restaurant)
         Review dwight = new Review("Dwight Schrute", "Beets beats battle star gallectica", 10, subway);
@@ -21,10 +26,12 @@ public class RestaurantTest {
         // Add the review to the restaurant
 
         subway.addReview(michael);
+        subway.addReview(kevin);
         subway.addReview(dwight);
+        subway.getTotalRating();
 
         // Actual test
-        assertEquals("Subway has a rating of 10 and is priced at $. The following are the review from ont of our customers Dwight Schrute: Beets beats battle star gallectica", subway.toString());
+        assertEquals("Subway has a rating of 10 and is priced at $. The following are the review from ont of our customers Kevin Malone: Nom nom nom", subway.toString());
     }
 
     @Test
