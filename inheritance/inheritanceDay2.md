@@ -63,10 +63,10 @@ The following tests were created for testing the functionality of shop.java:
 
 [Link to ReviewTest.java](https://github.com/sadhikari07/java-fundamentals/blob/master/inheritance/src/test/java/inheritance/ReviewTest.java)
 
-[Link to Shop.java](https://github.com/sadhikari07/java-fundamentals/blob/master/inheritance/src/test/java/inheritance/Shop.java)
+[Link to Shop.java](https://github.com/sadhikari07/java-fundamentals/blob/master/inheritance/src/main/java/inheritance/Shop.java)
 
 [Link to ShopTest.java](https://github.com/sadhikari07/java-fundamentals/blob/master/inheritance/src/test/java/inheritance/ShopTest.java)
 
-[Link to Theater.java](https://github.com/sadhikari07/java-fundamentals/blob/master/inheritance/src/test/java/inheritance/Theater.java)
+[Link to Theater.java](https://github.com/sadhikari07/java-fundamentals/blob/master/inheritance/src/main/java/inheritance/Theater.java)
 
 [Link to TheaterTest.java](https://github.com/sadhikari07/java-fundamentals/blob/master/inheritance/src/test/java/inheritance/TheaterTest.java)
