@@ -29,14 +29,13 @@ It’s also okay if someone doesn’t want to include the movie they saw when th
 Add testing for any new functionality you’ve created.
 
 ## Directions for testing:
-The following tests were created for testing the functionality of restaurant.java:
+The following tests were created for testing the functionality of shop.java:
   testConstructor: tests if restaurant constructor is created properly and .tostring method is functional.
-  testUpdatedRating: tests if .tostring is outputting updated review that's assosiated with the customer specified.
-  testIfMultipleReviewsAdded: tests if mutiple reviews are being stored
+ 
   
-  The following tests were created for testing the functionality of restaurant.java:
+  The following tests were created for testing the functionality of theater.java:
     testConstructor: tests if review constructor is created properly and .tostring method is functional.
-    estIfGettingRestaurant: tests if name of restaurant is being updated from the information passed from restaurant      constructor.
+    
   
   
 
@@ -47,3 +46,11 @@ The following tests were created for testing the functionality of restaurant.jav
 [Link to RestaurantTest.java](https://github.com/sadhikari07/java-fundamentals/blob/master/inheritance/src/test/java/inheritance/RestaurantTest.java)
 
 [Link to ReviewTest.java](https://github.com/sadhikari07/java-fundamentals/blob/master/inheritance/src/test/java/inheritance/ReviewTest.java)
+
+[Link to Shop.java](https://github.com/sadhikari07/java-fundamentals/blob/master/inheritance/src/test/java/inheritance/Shop.java)
+
+[Link to ShopTest.java](https://github.com/sadhikari07/java-fundamentals/blob/master/inheritance/src/test/java/inheritance/ShopTest.java)
+
+[Link to Theater.java](https://github.com/sadhikari07/java-fundamentals/blob/master/inheritance/src/test/java/inheritance/Theater.java)
+
+[Link to TheaterTest.java](https://github.com/sadhikari07/java-fundamentals/blob/master/inheritance/src/test/java/inheritance/TheaterTest.java)
