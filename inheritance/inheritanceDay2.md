@@ -28,15 +28,27 @@ Make sure that someone reviewing a Restaurant or a Shop doesn’t have to includ
 It’s also okay if someone doesn’t want to include the movie they saw when they’re reviewing a theater (maybe they just went in for the popcorn).
 Add testing for any new functionality you’ve created.
 
+
 ## Directions for testing:
 The following tests were created for testing the functionality of shop.java:
   testConstructor: tests if restaurant constructor is created properly and .tostring method is functional.
  
+  The following tests were created for testing the functionality of theater.java:
+  testConstructor: tests if restaurant constructor is created properly and .tostring method is functional. 
+  testUpdatedShopRating: tests if .tostring is outputting updated review that's assosiated with the customer specified.         
+  testIfMultipleShopReviewsAdded: tests if mutiple reviews are being stored
   
   The following tests were created for testing the functionality of theater.java:
-    testConstructor: tests if review constructor is created properly and .tostring method is functional.
+  testConstructor: tests if restaurant constructor is created properly and .tostring method is functional. 
+  testUpdatedTheaterRating: tests if .tostring is outputting updated review that's assosiated with the customer specified.         
+  testIfMultipleTheaterReviewsAdded: tests if mutiple reviews are being stored
+
     
-  
+  The following tests were crteated for reviews.java: 
+  testConstructorRestaurantReview: tests if restaurant reviews are being created
+  testConstructorShopReview: tests if shop revies are being created
+  testConstructorTheaterReviewWithoutMovie: tests if theater reviews are being created without movies
+  testConstructorTheaterReviewWithMovie: tests if theater reviews are being created with movies 
   
 
 [Link to Restaurant.java](https://github.com/sadhikari07/java-fundamentals/blob/master/inheritance/src/main/java/inheritance/Restaurant.java)
