@@ -5,11 +5,13 @@ public class ReviewAll {
     private String author;
     private String body;
     private int stars;
+    private Business business;
 
-    public ReviewAll(String author, String body, int stars){
+    public ReviewAll(String author, String body, int stars, Business business){
         this.author = author;
         this.body = body;
         this.stars = stars;
+        this.business = business;
     }
 
     public String getAuthor() {
@@ -23,4 +25,6 @@ public class ReviewAll {
     public int getStars() {
         return stars;
     }
+
+    public Business getBusiness(){return business;}
 }
